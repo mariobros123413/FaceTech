@@ -38,7 +38,7 @@ const Register2 = () => {
               <Box display="flex" alignItems="center" justifyContent="center">
                 <img
                   className="headerImg"
-                  src="https://scontent.fvvi1-1.fna.fbcdn.net/v/t1.15752-9/398308058_806063907871492_736907878499778318_n.png?_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=PsjjU9sPNUoAX_p-Tnl&_nc_ht=scontent.fvvi1-1.fna&oh=03_AdRwWHrq_FhGIgHGauc5Wyj1DsWjCuylSRreqGK-dcBSsg&oe=656CF82D"
+                  src="https://scontent.fvvi1-2.fna.fbcdn.net/v/t1.15752-9/404513501_846384157491518_6539631298893060919_n.png?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=kH5d0p30KEQAX9BZud9&_nc_ht=scontent.fvvi1-2.fna&oh=03_AdS7SednSm9glBj7qHwk5FWC429LFjAprzKgjiEGaRG3bA&oe=658D95DE"
                   alt=""
                   height='200'
                 />
