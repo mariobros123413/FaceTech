@@ -43,7 +43,7 @@ const Router = [
       { path: '/compras', exact: true, element: <Compras /> },
       { path: '/pedidos', exact: true, element: <Pedido /> },
       { path: '/suscripcion', exact: true, element: <Suscripcion /> },
-      { path: '*', element: <Navigate to="/auth/404" /> },
+      { path: '/*', element: <Navigate to="/suscripcion" /> },
     ],
   },
   {

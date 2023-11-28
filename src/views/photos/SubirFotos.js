@@ -91,7 +91,7 @@ const SubirFotos = () => {
             formData.append('idgaleria', idgalerias);
             formData.append('idfotografo', userData.id);
             formData.append('foto', selectedFile);
-            api.post('galeria/subirFoto', formData, {
+            api.post('galeria/subirFotoc', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

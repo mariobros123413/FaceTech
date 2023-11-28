@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Typography, Button, TextField, Card, CardContent, CardActions, Dialog, FormControlLabel, Checkbox, DialogTitle, DialogContent, DialogContentText, Modal, Snackbar } from '@mui/material';
-import PageContainer from 'src/components/container/PageContainer';
-import DashboardCard from '../../components/shared/DashboardCard';
+
 import './evento.css';
 import api from 'src/axiosInstance';
 import { useNavigate } from 'react-router-dom';
@@ -299,11 +298,11 @@ const Evento = () => {
         return formattedDateTime;
     };
     return (
-        <PageContainer title="Tus Eventos" description="">
-            <DashboardCard title="Tus eventos">
-                <Button color="primary" variant="contained" size="large" onClick={handleOpenCreate}>
+        <div className="custom-page-container">
+            <div className="custom-dashboard-card">
+                <button className="custom-create-button" onClick={handleOpenCreate}>
                     Crear Evento +
-                </Button>
+                </button>
                 {/* Bucle para mostrar tarjetas de eventos */}
                 {Array.isArray(eventos) ? (
                     eventos.map((evento) => (
@@ -344,7 +343,7 @@ const Evento = () => {
                         No creaste eventos
                     </Typography> //en hackathono hice el else, revisar
                 )}
-            </DashboardCard>
+            </div>
 
             {open && (
                 <div className="modal-background">
@@ -585,7 +584,7 @@ const Evento = () => {
                     horizontal: 'right',
                 }}
             />
-        </PageContainer>
+        </div>
     );
 };
 

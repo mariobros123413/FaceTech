@@ -14,7 +14,7 @@ const Header = (props) => {
 
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
     boxShadow: 'none',
-    background: theme.palette.background.paper,
+    backgroundColor: "pink",
     justifyContent: 'center',
     backdropFilter: 'blur(4px)',
     [theme.breakpoints.up('lg')]: {
@@ -63,7 +63,7 @@ const Header = (props) => {
         </IconButton>
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center">
-          
+
           <Profile />
         </Stack>
       </ToolbarStyled>

@@ -1,0 +1,121 @@
+/* Estilos generales */
+.custom-page-container {
+    font-family: var(--font-family);
+    padding: 20px;
+  }
+  
+  /* Estilos para la tarjeta del dashboard */
+  .custom-dashboard-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Estilos para cada tarjeta de pedido */
+  .custom-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-card-content {
+    margin-bottom: 20px;
+  }
+  
+  .custom-card-content h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .custom-card-content p {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  /* Estilos para la sección de fotos dentro de la tarjeta */
+  .custom-photo-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .custom-photo {
+    margin: 8px;
+  }
+  
+  .custom-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .custom-photo p {
+    margin-top: 8px;
+  }
+  
+  /* Estilos para los botones dentro de la tarjeta */
+  .custom-card-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .custom-card-actions button {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Estilos para el cuadro de diálogo */
+  .custom-dialog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-dialog-content h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .custom-dialog-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .custom-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .custom-dialog-actions button {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+  
+  /* Estilos para el snackbar */
+  .custom-snackbar {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  

@@ -21,7 +21,7 @@ const NavItem = ({ item, level, pathDirect, onClick }) => {
     marginBottom: '2px',
     padding: '8px 10px',
     borderRadius: '8px',
-    backgroundColor: level > 1 ? 'transparent !important' : 'inherit',
+    backgroundColor: "pink",
     color:
       theme.palette.text.secondary,
     paddingLeft: '10px',

@@ -3,7 +3,7 @@ import { Typography, Button, TextField, Card, CardContent, CardActions, CardMedi
 import PageContainer from 'src/components/container/PageContainer';
 import DashboardCard from '../../components/shared/DashboardCard';
 import api from 'src/axiosInstance';
-
+import './Pedido.css'
 const Pedido = () => {
     const [open, setOpen] = useState(false);
     const [pedidos, setPedidos] = useState([]);
@@ -99,7 +99,7 @@ const Pedido = () => {
                                     <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                                         {objetosJSON.map((foto, index) => (
                                             <div key={index}>
-                                                <Card key={foto.id} sx={{ width: '100%', padding: '5px' }}>
+                                                <Card key={foto.id} sx={{ width: '70%', padding: '5px' }}>
                                                     <CardMedia
                                                         component="img"
                                                         height="80%"

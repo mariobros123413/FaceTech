@@ -1,5 +1,14 @@
 import {
-  IconAperture, IconCopy, IconLayoutDashboard, IconBrandCashapp, IconLogin, IconGift, IconMoodHappy, IconTypography, IconUserPlus, IconLogout, IconCalendarEvent, IconShoppingCart
+  IconLayoutDashboard,
+  IconShoppingCart,
+  IconSquareMinus,
+  IconGift,
+  IconCalendarEvent,
+  IconUser,
+  IconLogout,
+  IconLogin,
+  IconUserPlus,
+  IconBrandCashapp,
 } from '@tabler/icons';
 
 import { uniqueId } from 'lodash';
@@ -13,7 +22,6 @@ const Menuitems = [
     navlabel: true,
     subheader: 'Home',
   },
-
   {
     id: uniqueId(),
     title: 'Inicio',
@@ -22,49 +30,37 @@ const Menuitems = [
   },
   {
     navlabel: true,
-    subheader: 'Utilidades',
+    subheader: 'Administración',
   },
   isLoggedIn && userData.idtipousuario !== 2 && {
     id: uniqueId(),
-    title: 'Tus Eventos',
+    title: 'Gest. Eventos',
     icon: IconCalendarEvent,
     href: '/evento',
   },
   isLoggedIn && {
     id: uniqueId(),
-    title: 'Tus Asistencias',
-    icon: IconMoodHappy,
+    title: 'Invitacion',
+    icon: IconSquareMinus,
     href: '/asistencia',
   },
   isLoggedIn && {
     id: uniqueId(),
-    title: 'Tu Carrito',
+    title: 'Carrito',
     icon: IconShoppingCart,
     href: '/carrito',
   },
   isLoggedIn && {
     id: uniqueId(),
-    title: 'Tus compras',
+    title: 'Compras',
     icon: IconGift,
     href: '/compras',
   },
   isLoggedIn && userData.idtipousuario === 1 && {
     id: uniqueId(),
-    title: 'Tus Ventas',
-    icon: IconBrandCashapp,
+    title: 'Pedidos',
+    icon: IconBrandCashapp, // Puedes cambiar por otro icono de venta
     href: '/pedidos',
-  },
-  {
-    id: uniqueId(),
-    title: 'Typography',
-    icon: IconTypography,
-    href: '/ui/typography',
-  },
-  {
-    id: uniqueId(),
-    title: 'Shadow',
-    icon: IconCopy,
-    href: '/ui/shadow',
   },
   {
     navlabel: true,
@@ -94,15 +90,9 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: 'Icons',
-    icon: IconMoodHappy,
-    href: '/icons',
-  },
-  {
-    id: uniqueId(),
-    title: 'Sample Page',
-    icon: IconAperture,
-    href: '/sample-page',
+    title: 'Perfil',
+    icon: IconUser,
+    href: '/profile',
   },
 ].filter(Boolean);
 export default Menuitems;
